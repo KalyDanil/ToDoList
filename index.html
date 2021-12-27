@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lanh="ru">
+<html lanh = "ru">
     <head>
         <title>ToDoList</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <h1>TO DO LIST</h1>
-        <div><input type="button" id="check_All" onclick="check_All()" value="Check All" hidden="true"><input id="put" placeholder="What should be done" type="text" onkeydown="make(event)" ><input type="button" onclick="makeButton()" value="Add"></div>
-        <form id="form"></form>
-        <span id="count" hidden="true">dasd</span>
-        <input type="button" id="all" onclick="All_Button()" hidden="true" value="All">
-        <input type="button" id="active" onclick="Active_Button()" hidden="true" value="Active">
-        <input type="button" id="completed" onclick="Completed_Button()" hidden="true" value="Completed">
-        <input type="button" id="Button_ClearCompleted" onclick="Button_ClearCompleted()" hidden="true" value="Clear completed">
-        <script src="TodolistScript.js"></script>
+    <div class = "frame">
+        <div class = "upperLine" id = "upper">
+            <input type = "button" class = "buttonOfUp" id = "check_All" onclick = "check_All()" value = "Check All" hidden = "true">
+            <input class = "whatShould" id = "put" placeholder = "What should be done" type = "text" onkeydown = "make(event)" >
+            <input type = "button" class="buttonOfUp" onclick = "makeButton()" value = "Add">
+        </div>
+        <form id = "form"></form>
+        <div id = "lower">  
+            <span id = "count" hidden = "true"></span>
+            <input class = "buttonOfLower" type = "button" id = "all" onclick = "All_Button()" hidden = "true" value = "All">
+            <input class = "buttonOfLower" type = "button" id = "active" onclick = "Active_Button()" hidden = "true" value = "Active">
+            <input class = "buttonOfLower" type = "button" id = "completed" onclick = "Completed_Button()" hidden = "true" value = "Completed">
+            <input class = "buttonOfLower" type = "button" id = "Button_ClearCompleted" onclick = "Button_ClearCompleted()" hidden = "true" value = "Clear completed">
+        </div> 
+    </div>   
+        <script src = "TodolistScript.js"></script>
     </body>
 </html>
