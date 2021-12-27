@@ -1,12 +1,73 @@
-.completed{
+.completed {
     text-decoration: line-through;
+    flex-grow: 1;
+    font-weight : normal;
 }
-.active{
+.active {
     text-decoration: none;
+    flex-grow: 1;
+    font-weight : bold;
 }
-.button_active{
+
+.button_active {
     text-decoration: underline;
 }
-.button_passive{
+.button_passive {
     text-decoration: none;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame {
+    border: 1rem solid rgb(230, 141, 8);
+}
+h1 {
+    align-self: center;
+    font-family: Impact, fantasy;
+}
+
+.upperLine {
+    display: flex;
+    width: 350px;
+    border: 2px solid;
+    justify-content: space-between;
+}
+.buttonOfUp {
+    background-color: #941111f1;
+    color:white;
+}
+.whatShould {
+    flex-grow:1;
+}
+
+.lines {
+    display: flex;
+    background: rgb(243, 243, 243);
+    width: 350px;
+    word-break: break-all;
+    border: 2px solid;
+    font-style : italic;
+}
+.textField {
+    flex-grow: 1;
+}
+.buttonX {
+    border: none;
+}
+
+.lowerLine {
+    display: flex;
+    width: 350px;
+    border: 2px solid;
+    justify-content: space-between;
+}
+.buttonOfLower {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #941111f1;
+    color: white;
 }
